@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abigail & Co. </title>
+  <style>
+    /* --- BASIC STYLING --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f8b6c2;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      gap: 20px;
+      border-bottom: 2px solid #f8b6c2;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f26b8a;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #f26b8a;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* --- GALLERY --- */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      background-color: #f8b6c2;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 0.9rem;
+    }
+
+    /* --- CONTACT FORM --- */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      width: 80%;
+      max-width: 400px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #f26b8a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #e25578;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🌸 Abigail & Co. 🌸</header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#services">Services & Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Abigail & Co. </h2>
+    <p> Write a description of the website here .</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Abigail’s Boutique was founded with a passion for wanting to code something hahah
+      .</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/featured/?fashion" alt="Fashion 1">
+      <img src="https://source.unsplash.com/featured/?clothing" alt="Fashion 2">
+      <img src="https://source.unsplash.com/featured/?boutique" alt="Fashion 3">
+      <img src="https://source.unsplash.com/featured/?dress" alt="Fashion 4">
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services & Products</h2>
+    <p>✨ <br>
+       👜 <br>
+       💌 </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>contact info here </p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Abigail & Co. | Designed with ❤️
+  </footer>
+
+</body>
+</html>
